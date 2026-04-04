@@ -1,0 +1,15 @@
+package group.teachingmanagerhd.dto.member;
+//查询教师信息的类
+import group.teachingmanagerhd.vo.member.Teacher;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class QueryTeacherParam {
+    private Integer pageSize;
+    private Integer currentPage;
+    private Teacher param;
+}
