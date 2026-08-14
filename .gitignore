@@ -1,0 +1,66 @@
+# ============================================================
+# 教务管理系统 - 根目录 .gitignore
+# 忽略不需要上传到 Git 仓库的文件
+# ============================================================
+
+# ---------- IDE / 编辑器配置 ----------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+*.factorypath
+*.propertyset
+
+# ---------- 操作系统文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*.swp
+*.swo
+
+# ---------- 后端构建产物 ----------
+target/
+*.class
+*.jar
+*.war
+*.ear
+logs/
+*.log
+# 保留 Maven Wrapper 的 jar（mvnw 离线运行依赖）
+!teaching-manager-hd/.mvn/wrapper/maven-wrapper.jar
+
+# ---------- 前端构建产物与依赖 ----------
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ---------- 前端本地环境变量 ----------
+.env.local
+.env.*.local
+
+# ---------- 前端日志 ----------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------- 压缩包 / 临时文件 ----------
+*.zip
+*.tar.gz
+*.7z
+*.rar
+tmp/
+temp/
+*.tmp
+*.bak
+*~
+
+# ---------- 数据库备份（如需保留请手动上传） ----------
+*.sql.bak
